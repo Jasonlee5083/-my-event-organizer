@@ -1,17 +1,6 @@
-/*
-.stime {
-	padding-left: 0px;
-	padding-right:0px;
-}
 
-.etime {
-	padding-left : 0px;
-	padding-right: 0px;
-}
-*/
 
 #main {
-/*	padding-top: 50px;*/
 }
 
 .sbutton {
@@ -19,17 +8,7 @@ text-align: center;
 
 }
 
-/*
-.moveNext {
-	color: white;
-}
-
-md-icon {
-	color:white;
-}
-*/
 .one {
-/*	background-color: aqua;*/
 	padding:0px;
 	margin:0px;
 	text-align: left;

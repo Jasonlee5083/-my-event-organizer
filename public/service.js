@@ -12,15 +12,9 @@ app.service("scheduleService",function($http){
 	}
 	
 	this.postSchedule = function(newitem) {
-		
-//		newitem.date = new Date(newitem.date);
-//		newitem.date = newitem.date.toString();
-//		console.log(newitem.date);
-		
-		
+
 		return $http.post("/api/mschedule", newitem).then(function(response){
-//			response.data.date = new Date(response.data.date);
-//			console.toLocaleString(response.data)
+
 			return response.data;
 		})
 	}
@@ -54,7 +48,6 @@ app.service("mapservice",function($http) {
 	this.getMapdata1 = function(mapdata) {
 		var url = 'https://michele-zonca-google-geocoding.p.mashape.com/geocode/json?address=' + mapdata;
 		return $http.get(url,config).then(function(response){
-//			console.log(response.data);
 			return response.data;			
 		});
 	}

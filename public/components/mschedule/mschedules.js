@@ -3,7 +3,6 @@ var app = angular.module("scheduleApp");
 
 app.controller("scheduleController", function ($window, $scope, scheduleService, $filter, MaterialCalendarData, $http, mapservice) {
 
-
 	function getSchedule() {
 		scheduleService.getSchedule().then(function (response) {
 			$scope.schedule = response;
