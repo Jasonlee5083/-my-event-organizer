@@ -1,14 +1,14 @@
-var app = angular.module("scheduleApp", ["ScheduleApp.Auth","ngRoute","ngMaterial","materialCalendar","uiGmapgoogle-maps"]);
+var app = angular.module("scheduleApp", ["ScheduleApp.Auth", "ngRoute", "ngMaterial", "materialCalendar", "uiGmapgoogle-maps"]);
 
 app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl: "components/home/home.html"
-        })
-        .when("/mschedule", {
-            templateUrl: "components/mschedule/mschedules.html",
-            controller: "scheduleController"
-        })
+	$routeProvider
+		.when("/", {
+			templateUrl: "components/home/home.html"
+		})
+		.when("/mschedule", {
+			templateUrl: "components/mschedule/mschedules.html",
+			controller: "scheduleController"
+		})
 });
 
 
@@ -23,7 +23,7 @@ app.config(function ($mdIconProvider, $$mdSvgRegistry) {
 app.config(['uiGmapGoogleMapApiProvider', function (GoogleMapApiProviders) {
 
 	GoogleMapApiProviders.configure({
-		china: true
+		china: true,
+		key: "AIzaSyAFrB1ToTkq4a-BNsaGUf_zgtR_Rb3Aa-0&"
 	});
-    }]);
-
+}]);
