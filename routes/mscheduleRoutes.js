@@ -1,4 +1,3 @@
-
 var express = require("express");  
 var mscheduleRouter = express.Router();  
 var Mschedule = require("../models/mschedule");

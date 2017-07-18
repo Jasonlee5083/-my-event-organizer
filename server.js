@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 var config = require("./config");  
 var expressJwt = require("express-jwt");
 
-var port = process.env.PORT || 9000;
+var port = process.env.PORT || 8800;
 
 mongoose.connect(config.database);  
 
@@ -20,9 +20,9 @@ app.use("/api/mschedule",require("./routes/mscheduleRoutes"));
 app.use("/auth", require("./routes/authRoutes"));  
 
 
-app.get("/", function (req, res) {  
-    res.send("It's working");
-});
+//app.get("/", function (req, res) {  
+//    res.send("It's working");
+//});
 
 app.listen(port, function () {  
     console.log(`Server listening on port ${port}`);
